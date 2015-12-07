@@ -1,0 +1,49 @@
+# Project: AES_Ref
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = in_output.o shiftRows.o main.o key_schedule.o encrypt.o subBytes.o mixColumns.o decrypt.o
+LINKOBJ  = in_output.o shiftRows.o main.o key_schedule.o encrypt.o subBytes.o mixColumns.o decrypt.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib32" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -m32 -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = AES_Ref.exe
+CXXFLAGS = $(CXXINCS) -m32 -g3
+CFLAGS   = $(INCS) -m32 -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+in_output.o: in_output.c
+	$(CC) -c in_output.c -o in_output.o $(CFLAGS)
+
+shiftRows.o: shiftRows.c
+	$(CC) -c shiftRows.c -o shiftRows.o $(CFLAGS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+key_schedule.o: key_schedule.c
+	$(CC) -c key_schedule.c -o key_schedule.o $(CFLAGS)
+
+encrypt.o: encrypt.c
+	$(CC) -c encrypt.c -o encrypt.o $(CFLAGS)
+
+subBytes.o: subBytes.c
+	$(CC) -c subBytes.c -o subBytes.o $(CFLAGS)
+
+mixColumns.o: mixColumns.c
+	$(CC) -c mixColumns.c -o mixColumns.o $(CFLAGS)
+
+decrypt.o: decrypt.c
+	$(CC) -c decrypt.c -o decrypt.o $(CFLAGS)

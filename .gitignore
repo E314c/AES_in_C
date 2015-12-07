@@ -45,3 +45,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+#Project Specific Ignores:
+*.o
+temp.txt
+Reference/AES_C_Implementation/AES_Ref.layout

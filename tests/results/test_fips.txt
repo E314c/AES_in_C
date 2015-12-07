@@ -1,0 +1,372 @@
+---Debug level---
+         2
+Getting data from data/fips.txt
+"Initial Block" :
+|  0 | 44 | 88 | cc | 
+| 11 | 55 | 99 | dd | 
+| 22 | 66 | aa | ee | 
+| 33 | 77 | bb | ff | 
+
+"Initial Key" :
+|  0 |  4 |  8 |  c | 
+|  1 |  5 |  9 |  d | 
+|  2 |  6 |  a |  e | 
+|  3 |  7 |  b |  f | 
+---------------------------
+
+.:AddRoundKey:.
+
+
+------------------
+"Data Block, beginning of round 0" :
+|  0 | 40 | 80 | c0 | 
+| 10 | 50 | 90 | d0 | 
+| 20 | 60 | a0 | e0 | 
+| 30 | 70 | b0 | f0 | 
+
+.:KeyScheduler:.
+
+.:Sub Bytes:.
+
+.:Sub Bytes:.
+"Data after subBytes" :
+| 63 |  9 | cd | ba | 
+| ca | 53 | 60 | 70 | 
+| b7 | d0 | e0 | e1 | 
+|  4 | 51 | e7 | 8c | 
+
+.:Shift Rows:.
+"Data after shiftRows" :
+| 63 |  9 | cd | ba | 
+| 53 | 60 | 70 | ca | 
+| e0 | e1 | b7 | d0 | 
+| 8c |  4 | 51 | e7 | 
+
+.:Mix Columns:.
+"Data after mixColumns" :
+| 5f | 57 | f7 | 1d | 
+| 72 | f5 | be | b9 | 
+| 64 | bc | 3b | f9 | 
+| 15 | 92 | 29 | 1a | 
+
+.:AddRoundKey:.
+
+
+------------------
+"Data Block, beginning of round 1" :
+| 89 | 85 | 2d | cb | 
+| d8 | 5a | 18 | 12 | 
+| 10 | ce | 43 | 8f | 
+| e8 | 68 | d8 | e4 | 
+
+.:KeyScheduler:.
+
+.:Sub Bytes:.
+
+.:Sub Bytes:.
+"Data after subBytes" :
+| a7 | 97 | d8 | 1f | 
+| 61 | be | ad | c9 | 
+| ca | 8b | 1a | 73 | 
+| 9b | 45 | 61 | 69 | 
+
+.:Shift Rows:.
+"Data after shiftRows" :
+| a7 | 97 | d8 | 1f | 
+| be | ad | c9 | 61 | 
+| 1a | 73 | ca | 8b | 
+| 69 | 9b | 45 | 61 | 
+
+.:Mix Columns:.
+"Data after mixColumns" :
+| ff | 31 | 64 | 77 | 
+| 87 | d8 | 51 | 3a | 
+| 96 | 6a | 51 | d0 | 
+| 84 | 51 | fa |  9 | 
+
+.:AddRoundKey:.
+
+
+------------------
+"Data Block, beginning of round 2" :
+| 49 | 55 | da | 1f | 
+| 15 | e5 | ca |  a | 
+| 59 | d7 | 94 | 63 | 
+| 8f | a0 | fa | f7 | 
+
+.:KeyScheduler:.
+
+.:Sub Bytes:.
+
+.:Sub Bytes:.
+"Data after subBytes" :
+| 3b | fc | 57 | c0 | 
+| 59 | d9 | 74 | 67 | 
+| cb |  e | 22 | fb | 
+| 73 | e0 | 2d | 68 | 
+
+.:Shift Rows:.
+"Data after shiftRows" :
+| 3b | fc | 57 | c0 | 
+| d9 | 74 | 67 | 59 | 
+| 22 | fb | cb |  e | 
+| 68 | 73 | e0 | 2d | 
+
+.:Mix Columns:.
+"Data after mixColumns" :
+| 4c | f7 | 2c | 53 | 
+| 9c | 71 | 3f | 4d | 
+| 1e | f0 | 86 | f2 | 
+| 66 | 76 | 8e | 56 | 
+
+.:AddRoundKey:.
+
+
+------------------
+"Data Block, beginning of round 3" :
+| fa | 25 | 40 | 57 | 
+| 63 | b3 | 66 | 24 | 
+| 6a | 39 | 8a | 4d | 
+| 28 | c9 | 31 | 17 | 
+
+.:KeyScheduler:.
+
+.:Sub Bytes:.
+
+.:Sub Bytes:.
+"Data after subBytes" :
+| 2d | 3f |  9 | 5b | 
+| fb | 6d | 33 | 36 | 
+|  2 | 12 | 7e | e3 | 
+| 34 | dd | c7 | f0 | 
+
+.:Shift Rows:.
+"Data after shiftRows" :
+| 2d | 3f |  9 | 5b | 
+| 6d | 33 | 36 | fb | 
+| 7e | e3 |  2 | 12 | 
+| f0 | 34 | dd | c7 | 
+
+.:Mix Columns:.
+"Data after mixColumns" :
+| 63 | fc | 97 | 75 | 
+| 85 | 53 | be | 47 | 
+| b7 | 8d | 47 | d6 | 
+| 9f | f9 | 8e | 91 | 
+
+.:AddRoundKey:.
+
+
+------------------
+"Data Block, beginning of round 4" :
+| 24 | 69 | 6e | 88 | 
+| 72 | 66 | d2 | 42 | 
+| 40 | b3 | 75 | 5b | 
+| 23 | fa | 32 | 6c | 
+
+.:KeyScheduler:.
+
+.:Sub Bytes:.
+
+.:Sub Bytes:.
+"Data after subBytes" :
+| 36 | f9 | 9f | c4 | 
+| 40 | 33 | b5 | 2c | 
+|  9 | 6d | 9d | 39 | 
+| 26 | 2d | 23 | 50 | 
+
+.:Shift Rows:.
+"Data after shiftRows" :
+| 36 | f9 | 9f | c4 | 
+| 33 | b5 | 2c | 40 | 
+| 9d | 39 |  9 | 6d | 
+| 50 | 26 | 2d | 23 | 
+
+.:Mix Columns:.
+"Data after mixColumns" :
+| f4 | 32 | 75 | 1d | 
+| bc | e5 | f1 | d0 | 
+| d4 | 54 | d6 | 3b | 
+| 54 | d0 | c5 | 3c | 
+
+.:AddRoundKey:.
+
+
+------------------
+"Data Block, beginning of round 5" :
+| c8 | 9b | 25 | b0 | 
+| 16 | 7a |  2 | 26 | 
+| 77 | c9 | 79 | 19 | 
+| bc | 3b | 92 | 96 | 
+
+.:KeyScheduler:.
+
+.:Sub Bytes:.
+
+.:Sub Bytes:.
+"Data after subBytes" :
+| e8 | 14 | 3f | e7 | 
+| 47 | da | 77 | f7 | 
+| f5 | dd | b6 | d4 | 
+| 65 | e2 | 4f | 90 | 
+
+.:Shift Rows:.
+"Data after shiftRows" :
+| e8 | 14 | 3f | e7 | 
+| da | 77 | f7 | 47 | 
+| b6 | d4 | f5 | dd | 
+| 90 | 65 | e2 | 4f | 
+
+.:Mix Columns:.
+"Data after mixColumns" :
+| 98 |  0 | 6b | 8e | 
+| 16 | f8 | 2c | 5a | 
+| ee | 7f |  4 | d0 | 
+| 74 | 55 | 9c | 36 | 
+
+.:AddRoundKey:.
+
+
+------------------
+"Data Block, beginning of round 6" :
+| c6 | f7 | cc | 84 | 
+| 2f | 5e | 79 | f9 | 
+| e1 | ed | 39 | cf | 
+|  9 | c3 | 5d | 5d | 
+
+.:KeyScheduler:.
+
+.:Sub Bytes:.
+
+.:Sub Bytes:.
+"Data after subBytes" :
+| b4 | 68 | 4b | 5f | 
+| 15 | 58 | b6 | 99 | 
+| f8 | 55 | 12 | 8a | 
+|  1 | 2e | 4c | 4c | 
+
+.:Shift Rows:.
+"Data after shiftRows" :
+| b4 | 68 | 4b | 5f | 
+| 58 | b6 | 99 | 15 | 
+| 12 | 8a | f8 | 55 | 
+| 4c |  1 | 2e | 4c | 
+
+.:Mix Columns:.
+"Data after mixColumns" :
+| c5 | 9a | f0 | 98 | 
+| 7e | 9b | 5f | c6 | 
+| 1c | d2 | 4b | 34 | 
+| 15 | 86 | e0 | 39 | 
+
+.:AddRoundKey:.
+
+
+------------------
+"Data Block, beginning of round 7" :
+| d1 | 79 | b4 | d6 | 
+| 87 | c4 | 55 | 6f | 
+| 6c | 30 | 94 | f4 | 
+|  f |  a | ad | 1f | 
+
+.:KeyScheduler:.
+
+.:Sub Bytes:.
+
+.:Sub Bytes:.
+"Data after subBytes" :
+| 3e | b6 | 8d | f6 | 
+| 17 | 1c | fc | a8 | 
+| 50 |  4 | 22 | bf | 
+| 76 | 67 | 95 | c0 | 
+
+.:Shift Rows:.
+"Data after shiftRows" :
+| 3e | b6 | 8d | f6 | 
+| 1c | fc | a8 | 17 | 
+| 22 | bf | 50 |  4 | 
+| c0 | 76 | 67 | 95 | 
+
+.:Mix Columns:.
+"Data after mixColumns" :
+| ba | a1 | d5 | 5f | 
+| a0 | f9 | 51 | 41 | 
+| 3d | b5 | 2c | 4d | 
+| e7 | 6e | ba | 23 | 
+
+.:AddRoundKey:.
+
+
+------------------
+"Data Block, beginning of round 8" :
+| fd |  5 | 35 | f1 | 
+| e3 | e5 | 47 | fe | 
+| ba | d0 | 96 | 37 | 
+| d2 | d7 | 4e | f1 | 
+
+.:KeyScheduler:.
+
+.:Sub Bytes:.
+
+.:Sub Bytes:.
+"Data after subBytes" :
+| 54 | 6b | 96 | a1 | 
+| 11 | d9 | a0 | bb | 
+| f4 | 70 | 90 | 9a | 
+| b5 |  e | 2f | a1 | 
+
+.:Shift Rows:.
+"Data after shiftRows" :
+| 54 | 6b | 96 | a1 | 
+| d9 | a0 | bb | 11 | 
+| 90 | 9a | f4 | 70 | 
+| a1 | b5 |  e | 2f | 
+
+.:Mix Columns:.
+"Data after mixColumns" :
+| e9 |  2 | 1b | 35 | 
+| f7 | 30 | f2 | 3c | 
+| 4e | 20 | cc | 21 | 
+| ec | f6 | f2 | c7 | 
+
+.:AddRoundKey:.
+
+
+------------------
+"Data Block, beginning of round 9" :
+| bd | f2 |  b | 8b | 
+| 6e | b5 | 61 | 10 | 
+| 7c | 77 | 21 | b6 | 
+| 3d | 9e | 6e | 89 | 
+
+.:KeyScheduler:.
+
+.:Sub Bytes:.
+
+.:Sub Bytes:.
+"Data after subBytes" :
+| 7a | 89 | 2b | 3d | 
+| 9f | d5 | ef | ca | 
+| 10 | f5 | fd | 4e | 
+| 27 |  b | 9f | a7 | 
+
+.:Shift Rows:.
+"Data after shiftRows" :
+| 7a | 89 | 2b | 3d | 
+| d5 | ef | ca | 9f | 
+| fd | 4e | 10 | f5 | 
+| a7 | 27 |  b | 9f | 
+
+.:AddRoundKey:.
+"Final Block" :
+| 69 | 6a | d8 | 70 | 
+| c4 | 7b | cd | b4 | 
+| e0 |  4 | b7 | c5 | 
+| d8 | 30 | 80 | 5a | 
+
+"Final Key" :
+| 13 | e3 | f3 | 4d | 
+| 11 | 94 |  7 | 2b | 
+| 1d | 4a | a7 | 30 | 
+| 7f | 17 | 8b | c5 | 
+---------------------------
